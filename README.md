@@ -23,7 +23,7 @@ A sleek color picker module for Waybar on Hyprland, inspired by Sip on macOS.
 1. Clone this repository to your preferred location:
 
 ```bash
-git clone https://github.com/yourusername/waypick.git
+git clone git@github.com:OlivierDijkstra/waypick.git
 ```
 
 2. Create the modules directory in your waybar config (if it doesn't exist):
