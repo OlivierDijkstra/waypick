@@ -27,6 +27,8 @@ add_to_history() {
 
 pick_color() {
     color=$(hyprpicker -a)
+
+    notify-send "Color Picked" "Color $color picked" -t 3000 -a "WayPick" -u normal
     
     if [ -n "$color" ]; then
         color=$(echo "$color" | tr -d '[:space:]')
@@ -38,7 +40,7 @@ pick_color() {
 copy_to_clipboard() {
     color=$(get_last_color)
     echo -n "$color" | wl-copy
-    notify-send "Color Copied" "Color $color copied to clipboard" -i color-select
+    notify-send "Color Copied" "Color $color copied to clipboard" -t 3000 -a "WayPick" -u normal
 }
 
 output_json() {
